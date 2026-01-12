@@ -1,0 +1,172 @@
+.quick-access {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: white;
+  border: 1px solid #eaeaea;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 6px;
+}
+
+.impact {
+  background: var(--primary);
+  color: white;
+  padding: 3rem 2rem;
+}
+
+.impact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  text-align: center;
+}
+
+
+
+.personal-layout {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.personal-sidebar {
+  border-right: 1px solid #eaeaea;
+  padding-right: 1.5rem;
+}
+
+.personal-sidebar h2 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.personal-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.personal-sidebar li {
+  margin-bottom: 0.6rem;
+}
+
+.personal-sidebar a {
+  text-decoration: none;
+  color: var(--text);
+  font-size: 0.9rem;
+}
+
+.personal-main {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.personal-section h2 {
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+}
+
+.personal-list {
+  padding-left: 1.2rem;
+}
+
+.personal-list li {
+  margin-bottom: 0.4rem;
+}
+
+.personal-back {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  text-decoration: none;
+  color: var(--primary);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .personal-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .personal-sidebar {
+    border-right: none;
+    border-bottom: 1px solid #eaeaea;
+    padding-bottom: 1rem;
+  }
+}
+
+.personal-intro {
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  color: white;
+  padding: 3rem 2rem;
+}
+
+.personal-intro h2 {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.personal-intro p {
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+.personal-card {
+  background: white;
+  border-radius: 14px;
+  padding: 2rem;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.personal-section h2 {
+  position: relative;
+  padding-left: 1rem;
+}
+
+.personal-section h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.3rem;
+  width: 4px;
+  height: 1.4rem;
+  background: var(--accent);
+  border-radius: 2px;
+}
+
+.personal-sidebar {
+  background: #fafafa;
+  padding: 1.5rem;
+  border-radius: 12px;
+}
+
+.personal-sidebar a {
+  display: block;
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  transition: background 0.2s ease;
+}
+
+.personal-sidebar a:hover {
+  background: var(--gray);
+}
+
+.personal-card {
+  animation: fadeUp 0.6s ease both;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

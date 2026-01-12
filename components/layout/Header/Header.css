@@ -1,28 +1,39 @@
-/* Header.css */
 .header {
   border-bottom: 1px solid #eaeaea;
 }
+
 .header-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .logo {
   height: 50px;
 }
+
 .nav a {
   margin-left: 1.5rem;
   text-decoration: none;
   color: var(--text);
   font-weight: 600;
 }
+
 .nav .cta {
-  color: white;
   background: var(--primary);
+  color: white;
   padding: 0.5rem 1rem;
   border-radius: 4px;
-  transition: background-color 0.3s ease;
 }
-.nav .cta:hover {
-  background-color: #002770;
+
+
+
+.personal-header {
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.personal-header h1 {
+  font-size: 1.6rem;
+  font-weight: 600;
 }

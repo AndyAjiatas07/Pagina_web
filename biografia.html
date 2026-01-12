@@ -1,53 +1,73 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Inicio</title>
-  <link rel="stylesheet" href="styles/globals.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Inicio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Header -->
-  <header class="header">
-    <h1>Mi sitio personal</h1>
-  </header>
+    <!-- Global -->
+    <link rel="stylesheet" href="styles/variables.css" />
+    <link rel="stylesheet" href="styles/globals.css" />
 
-  <!-- Contenedor principal -->
-  <div class="layout">
+    <!-- Layout -->
+    <link rel="stylesheet" href="components/layout/Header/Header.css" />
+    <link rel="stylesheet" href="components/layout/Footer/Footer.css" />
 
-    <!-- Sidebar / Navegación -->
-    <aside class="sidebar">
-      <h2>Secciones</h2>
-      <ul>
-        <li><a href="pages/page_1.html">Mis hobbies</a></li>
-        <li><a href="pages/page_2.html">Tiempo dedicado a mis hobbies</a></li>
-        <li><a href="pages/page_3.html">Propuesta</a></li>
-      </ul>
-    </aside>
-
-    <!-- Contenido principal -->
-    <main class="content">
-      <h1>Bienvenido a mi sitio personal</h1>
-
-      <section class="card">
-        <h2>Biografía</h2>
+    <!-- Sections -->
+    <link rel="stylesheet" href="components/sections/Contact/Contact.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="personal-header">
+      <section class="personal-intro">
+        <h2>Explorando ideas, hábitos y aprendizaje constante</h2>
         <p>
-          Hola, soy Andy una persona curiosa y creativa, interesada en aprender cosas nuevas
-          y mejorar constantemente. Me gusta dedicar tiempo a diferentes actividades
-          que me ayudan a crecer tanto personal como profesionalmente, como la lectura, la música,
-          el aprendizaje autodidacta, ver películas y series, y disfrutar del aire libre, entre otras.
-          Todas estas actividades me permiten desconectar, relajarme y encontrar inspiración en mi día a día.
-          Y espero que este sitio web refleje un poco de quién soy y mis intereses, así como compartir mis ideas, 
-          pensamientos y proyectos con quienes lo visiten.
-          
+          Un espacio personal donde comparto quién soy y cómo organizo mi
+          tiempo.
         </p>
       </section>
-    </main>
+    </header> 
 
-  </div>
-<footer class="footer">
-  <p>© 2026 Mi sitio personal · Desarrollado por Andy Ajiatas - 2021496</p>
-</footer>
 
-</body>
+    <!-- MAIN LAYOUT -->
+    <div class="personal-layout">
+      <!-- SIDEBAR -->
+      <aside class="personal-sidebar">
+        <h2>Secciones</h2>
+        <ul>
+          <li><a href="../index.html">Hobbies</a></li>
+          <li><a href="../kinal.html">Propuesta</a></li>
+        </ul>
+      </aside>
+
+      <!-- CONTENT -->
+      <main class="personal-main">
+        <section class="personal-section personal-card">
+          <h2>Bienvenido a mi sitio personal</h2>
+        </section>
+
+        <section class="personal-section personal-card">
+          <h2>Biografía</h2>
+          <p>
+            Hola, soy Andy, una persona curiosa y creativa, interesada en
+            aprender cosas nuevas y mejorar constantemente. Me gusta dedicar
+            tiempo a diferentes actividades que me ayudan a crecer tanto
+            personal como profesionalmente, como la lectura, la música, el
+            aprendizaje autodidacta, ver películas y series y disfrutar del aire
+            libre.
+            <br /><br />
+            Todas estas actividades me permiten desconectar, relajarme y
+            encontrar inspiración en mi día a día. Este sitio web busca reflejar
+            quién soy, mis intereses, ideas y algunos de los proyectos que
+            desarrollo.
+          </p>
+        </section>
+      </main>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="personal-footer">
+      <p>© 2026 Mi sitio personal · Andy Ajiatas - 2021496</p>
+    </footer>
+  </body>
 </html>

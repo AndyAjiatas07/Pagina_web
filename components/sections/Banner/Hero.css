@@ -1,21 +1,24 @@
-/* Hero.css */
 .hero {
-  background: url('../images/fondo1.avif') no-repeat center center/cover;
-  text-align: center;
-  padding: 6rem 2rem; /* un poco más de padding para que el texto respire */
-  color: white;
+  background: url('../../../images/fondo1.avif') no-repeat center / cover;
   position: relative;
+  text-align: center;
+  padding: 6rem 2rem;
+  color: white;
 }
+
 .hero::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.45); /* capa oscura para mejorar contraste */
-  z-index: 0;
+  background: rgba(0,0,0,0.45);
 }
+
 .hero-content {
   position: relative;
-  z-index: 1;
   max-width: 700px;
   margin: auto;
+}
+
+.hero-actions {
+  margin-top: 2rem;
 }

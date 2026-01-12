@@ -1,38 +1,49 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Mi sitio personal - Hobbies y Tiempo dedicado</title>
-  <link rel="stylesheet" href="../styles/globals.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mi sitio personal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Header -->
-  <header class="header">
-    <h1>Mi sitio personal</h1>
-  </header>
+    <!-- Global -->
+    <link rel="stylesheet" href="styles/variables.css" />
+    <link rel="stylesheet" href="styles/globals.css" />
 
-  <!-- Layout principal -->
-  <div class="layout">
+    <!-- Layout -->
+    <link rel="stylesheet" href="components/layout/Header/Header.css" />
+    <link rel="stylesheet" href="components/layout/Footer/Footer.css" />
 
-    <!-- Sidebar -->
-    <aside class="sidebar">
-      <h2>Secciones</h2>
-      <ul>
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a href="#hobbies" class="active">Mis hobbies</a></li>
-        <li><a href="#tiempo-dedicado">Tiempo dedicado</a></li>
-        <li><a href="page_3.html">Propuesta</a></li>
-      </ul>
-    </aside>
+    <!-- Sections -->
+    <link rel="stylesheet" href="components/sections/Contact/Contact.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="personal-header">
+      <section class="personal-intro">
+        <h2>Explorando ideas, hábitos y aprendizaje constante</h2>
+        <p>
+          Un espacio personal donde comparto quién soy y cómo organizo mi
+          tiempo.
+        </p>
+      </section>
+    </header> 
 
-    <!-- Contenido principal -->
-    <main class="content">
-      <!-- Sección de Hobbies -->
-      <section id="hobbies">
-        <h1>Mis hobbies y gustos</h1>
-        <section class="card">
-          <ul class="list">
+    <!-- MAIN LAYOUT -->
+    <div class="personal-layout">
+      <!-- SIDEBAR -->
+      <aside class="personal-sidebar">
+        <h2>Secciones</h2>
+        <ul>
+          <li><a href="../biografia.html">Biografía</a></li>
+          <li><a href="../kinal.html">Propuesta</a></li>
+        </ul>
+      </aside>
+
+      <!-- CONTENT -->
+      <main class="personal-main">
+<section id="hobbies" class="personal-section personal-card">
+          <h2>Mis hobbies y gustos</h2>
+          <ul class="personal-list">
             <li>Leer libros y artículos interesantes</li>
             <li>Escuchar música</li>
             <li>Aprender cosas nuevas</li>
@@ -40,38 +51,26 @@
             <li>Pasar tiempo al aire libre</li>
           </ul>
         </section>
-      </section>
 
-      <hr>
-
-      <!-- Sección de Tiempo Dedicado -->
-      <section id="tiempo-dedicado">
-        <h1>Tiempo que dedico a mis hobbies</h1>
-        <section class="card">
-          <p>
-            A lo largo de la semana distribuyo mi tiempo de la siguiente manera:
-          </p>
-
-          <ul class="list">
-            <li>Lectura: 1 hora semanal</li>
-            <li>Música: 5 horas semanales</li>
-            <li>Aprendizaje personal: 1 hora semanal</li>
-            <li>Películas y series: 3 horas semanales</li>
-            <li>Actividades al aire libre: 2 horas semanales</li>
-            <li>Actividad física: 7 horas semanales</li>
+<section id="tiempo" class="personal-section personal-card">
+          <h2>Tiempo que dedico a mis hobbies</h2>
+          <p>Distribución semanal aproximada:</p>
+          <ul class="personal-list">
+            <li>Lectura: 1 hora</li>
+            <li>Música: 5 horas</li>
+            <li>Aprendizaje personal: 1 hora</li>
+            <li>Películas y series: 3 horas</li>
+            <li>Actividades al aire libre: 2 horas</li>
+            <li>Actividad física: 7 horas</li>
           </ul>
         </section>
-      </section>
 
-      <a class="back-link" href="../index.html">← Volver al inicio</a>
-    </main>
+      </main>
+    </div>
 
-  </div>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <p>© 2026 Mi sitio personal · Desarrollado por Andy Ajiatas - 2021496</p>
-  </footer>
-
-</body>
+    <!-- FOOTER -->
+    <footer class="personal-footer">
+      <p>© 2026 Mi sitio personal · Andy Ajiatas - 2021496</p>
+    </footer>
+  </body>
 </html>

@@ -1,26 +1,32 @@
-/* Footer.css */
 .footer {
   background: #111;
   color: #ccc;
   padding: 1.5rem 2rem;
   margin-top: 4rem;
 }
+
 .footer-content {
-  max-width: 1100px;
-  margin: auto;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  align-items: center;
-  font-size: 0.9rem;
 }
+
 .social a {
+  margin-left: 1rem;
   color: #ccc;
   text-decoration: none;
-  margin-left: 1rem;
-  font-weight: 500;
-  transition: color 0.3s ease;
 }
-.social a:hover {
-  color: var(--accent);
+
+
+
+.personal-footer {
+  margin-top: 3rem;
+  padding: 1.5rem 2rem;
+  border-top: 1px solid #eaeaea;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.personal-footer {
+  background: linear-gradient(90deg, #f8f8f8, #ffffff);
 }
