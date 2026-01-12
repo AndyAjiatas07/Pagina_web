@@ -1,31 +1,77 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <link rel="stylesheet" href="style/style.css">
   <meta charset="UTF-8">
-  <title>Inicio</title>
+  <title>Mi sitio personal - Hobbies y Tiempo dedicado</title>
+  <link rel="stylesheet" href="../styles/globals.css">
 </head>
 <body>
 
-  <h1>Bienvenido a mi sitio personal</h1>
+  <!-- Header -->
+  <header class="header">
+    <h1>Mi sitio personal</h1>
+  </header>
 
-  <section>
-    <h2>Biografía</h2>
-    <p>
-      Soy una persona curiosa y creativa, interesada en aprender cosas nuevas
-      y mejorar constantemente. Me gusta dedicar tiempo a diferentes actividades
-      que me ayudan a crecer tanto personal como profesionalmente.
-    </p>
-  </section>
+  <!-- Layout principal -->
+  <div class="layout">
 
-  <nav>
-    <h2>Secciones</h2>
-    <ul>
-      <li><a href="pages/page_1.html">Mis hobbies</a></li>
-      <li><a href="pages/page_2.html">Tiempo dedicado a mis hobbies</a></li>
-      <li><a href="pages/page_3.html">Propuesta</a></li>
-    </ul>
-  </nav>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>Secciones</h2>
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="#hobbies" class="active">Mis hobbies</a></li>
+        <li><a href="#tiempo-dedicado">Tiempo dedicado</a></li>
+        <li><a href="page_3.html">Propuesta</a></li>
+      </ul>
+    </aside>
+
+    <!-- Contenido principal -->
+    <main class="content">
+      <!-- Sección de Hobbies -->
+      <section id="hobbies">
+        <h1>Mis hobbies y gustos</h1>
+        <section class="card">
+          <ul class="list">
+            <li>Leer libros y artículos interesantes</li>
+            <li>Escuchar música</li>
+            <li>Aprender cosas nuevas</li>
+            <li>Ver películas y series</li>
+            <li>Pasar tiempo al aire libre</li>
+          </ul>
+        </section>
+      </section>
+
+      <hr>
+
+      <!-- Sección de Tiempo Dedicado -->
+      <section id="tiempo-dedicado">
+        <h1>Tiempo que dedico a mis hobbies</h1>
+        <section class="card">
+          <p>
+            A lo largo de la semana distribuyo mi tiempo de la siguiente manera:
+          </p>
+
+          <ul class="list">
+            <li>Lectura: 1 hora semanal</li>
+            <li>Música: 5 horas semanales</li>
+            <li>Aprendizaje personal: 1 hora semanal</li>
+            <li>Películas y series: 3 horas semanales</li>
+            <li>Actividades al aire libre: 2 horas semanales</li>
+            <li>Actividad física: 7 horas semanales</li>
+          </ul>
+        </section>
+      </section>
+
+      <a class="back-link" href="../index.html">← Volver al inicio</a>
+    </main>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2026 Mi sitio personal · Desarrollado por Andy Ajiatas - 2021496</p>
+  </footer>
 
 </body>
 </html>
