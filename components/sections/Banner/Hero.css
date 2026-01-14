@@ -1,5 +1,5 @@
 .hero {
-  background: url('../../../images/fondo1.avif') no-repeat center / cover;
+  background: url('/images/fondo1.avif') no-repeat center / cover;
   position: relative;
   text-align: center;
   padding: 6rem 2rem;
