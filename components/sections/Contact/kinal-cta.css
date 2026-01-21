@@ -1,7 +1,5 @@
 .kinal-cta {
-  background:
-    linear-gradient(rgba(0,51,102,0.95), rgba(0,24,60,0.95)),
-    url("../../../images/cta-bg.webp") center / cover no-repeat;
+  background: var(--primary);
   color: white;
   padding: 5rem 0;
 }
