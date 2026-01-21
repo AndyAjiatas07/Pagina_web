@@ -1,0 +1,43 @@
+.kinal-cta {
+  background:
+    linear-gradient(rgba(0,51,102,0.95), rgba(0,24,60,0.95)),
+    url("../../../images/cta-bg.webp") center / cover no-repeat;
+  color: white;
+  padding: 5rem 0;
+}
+
+.kinal-cta-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.kinal-cta-text {
+  max-width: 520px;
+}
+
+.kinal-cta-text h2 {
+  font-size: 2.2rem;
+}
+
+.kinal-cta-actions {
+  display: flex;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .kinal-cta-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .kinal-cta-actions {
+    justify-content: center;
+  }
+
+  .kinal-cta-text h2 {
+    font-size: 1.8rem;
+  }
+}

@@ -1,0 +1,67 @@
+.kinal-footer {
+  background: linear-gradient(135deg, #0b1d3a, #001428);
+  color: #fff;
+  padding: 4rem 1rem 2rem;
+}
+
+.kinal-footer-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.kinal-footer-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.kinal-footer-stats strong {
+  font-size: 2rem;
+  color: #00b4ff;
+}
+
+.kinal-footer-stats span {
+  display: block;
+  font-size: .9rem;
+  opacity: .85;
+}
+
+.kinal-footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.kinal-footer-block h4 {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.kinal-footer-block a,
+.kinal-footer-block p {
+  display: block;
+  color: #cfd8ff;
+  font-size: .9rem;
+  margin-bottom: .4rem;
+  text-decoration: none;
+}
+
+.kinal-footer-block a:hover {
+  color: #00b4ff;
+}
+
+.kinal-footer-logo {
+  max-width: 140px;
+  margin-bottom: 1rem;
+}
+
+.kinal-footer-copy {
+  text-align: center;
+  font-size: .8rem;
+  opacity: .7;
+  border-top: 1px solid rgba(255,255,255,.1);
+  padding-top: 1.5rem;
+}

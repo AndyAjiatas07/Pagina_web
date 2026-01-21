@@ -1,0 +1,109 @@
+.kinal-header,
+.kinal-header * {
+  max-width: 100%;
+}
+
+.kinal-header {
+  background: white;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  box-shadow: 0 6px 20px rgba(0,0,0,.08);
+}
+
+.kinal-header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  gap: 1.5rem;
+}
+
+/* Logo */
+.kinal-brand {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.kinal-logo {
+  max-height: 48px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Navegación */
+.kinal-nav {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  max-width: 100%;
+  justify-content: center;
+}
+
+.kinal-nav a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #1f2937;
+  position: relative;
+}
+
+.kinal-nav a::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #003366;
+  transition: width .3s ease;
+}
+
+.kinal-nav a:hover::after {
+  width: 100%;
+}
+
+/* Idioma */
+.kinal-lang {
+  display: flex;
+  gap: .3rem;
+}
+
+.lang-btn {
+  border: 1px solid #d1d5db;
+  background: transparent;
+  padding: .3rem .6rem;
+  font-size: .8rem;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.lang-btn.active {
+  background: #003366;
+  color: white;
+  border-color: #003366;
+}
+
+/* Responsive header */
+@media (max-width: 900px) {
+  .kinal-header-content {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem 0;
+  }
+
+  .kinal-nav {
+    justify-content: center;
+    row-gap: .8rem;
+  }
+
+  .kinal-lang {
+    margin-top: .5rem;
+  }
+
+  .kinal-logo {
+    max-height: 38px;
+  }
+}

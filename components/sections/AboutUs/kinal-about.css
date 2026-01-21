@@ -1,0 +1,77 @@
+.kinal-section-accent {
+  position: relative;
+  background:
+    linear-gradient(rgba(0, 32, 74, 0.85), rgba(0, 32, 74, 0.85)),
+    url("../../../images/fondo1.webp") center / cover no-repeat;
+  color: white;
+  padding: 6rem 0;
+}
+
+.kinal-section-accent::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.15);
+  pointer-events: none;
+}
+
+.kinal-section-accent .kinal-container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Etiquetas */
+.kinal-section-tag {
+  display: inline-block;
+  margin-bottom: 0.8rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.kinal-section-accent .kinal-section-tag {
+  background: rgba(250, 204, 21, 0.15);
+  color: #facc15;
+}
+
+.kinal-lead {
+  max-width: 700px;
+  font-size: 1.05rem;
+  margin-bottom: 3rem;
+  color: #e5e7eb;
+}
+
+/* Features */
+.kinal-features {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.kinal-feature {
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(6px);
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: center;
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease;
+}
+
+.kinal-feature h3 {
+  color: white;
+  font-size: 1.15rem;
+  margin: 0.6rem 0 0.4rem;
+}
+
+.kinal-feature p {
+  color: #e5e7eb;
+  font-size: 0.95rem;
+}
+
+.kinal-feature:hover {
+  transform: translateY(-6px);
+  background: rgba(0, 32, 74, 0.75);
+}

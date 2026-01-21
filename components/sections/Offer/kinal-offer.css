@@ -1,0 +1,35 @@
+.kinal-cards {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.kinal-card {
+  background: white;
+  padding: 2.5rem 2rem;
+  border-radius: 18px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.kinal-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+}
+
+.kinal-section-accent .kinal-section-tag {
+  background: rgba(250, 204, 21, 0.15);
+  color: #facc15;
+}
+
+.kinal-section-tag {
+  display: inline-block;
+  margin-bottom: 0.8rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #2563eb;
+  font-weight: 600;
+}
